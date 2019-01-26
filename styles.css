@@ -13,3 +13,31 @@ header{
 header h1 {
    margin: 0;
 }
+nav{
+  background-color: grey;
+  overflow: auto;
+}
+nav ul{
+  list-style: none;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+   float: left;
+
+  }
+
+  nav a{
+     text-decoration: none;
+     padding: 1em;
+     color:#18314F;
+     font-family: Roboto cursive;
+     border-right:2px solid black;
+    }
+
+/*  sudo selector is hover*/
+    nav a:hover{
+      background-color: #468189;
+    }
