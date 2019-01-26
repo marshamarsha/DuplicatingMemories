@@ -5,6 +5,9 @@ body{
    margin: 0;
    padding: 0;
 }
+body a{
+  color: #18314F;
+}
 header{
     background-color: #468189;
     text-align: center;
@@ -41,3 +44,23 @@ nav li{
     nav a:hover{
       background-color: #468189;
     }
+
+footer{
+   border-top: 2px solid black;
+   text-align: center;
+   font-weight: bold;
+}
+
+footer a{
+   color: #18314F;
+   text-decoration: none;
+}
+footer a:hover{
+   color: #297373;
+   text-decoration: underline;
+}
+
+main{
+
+  min-height: 100px;
+}
