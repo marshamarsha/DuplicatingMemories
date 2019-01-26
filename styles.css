@@ -1,66 +1,106 @@
-body{
-   background-color: #B9D6F2;
-   color: #18314F;
-   font-family: 'Roboto', sans-serif;
-   margin: 0;
-   padding: 0;
-}
-body a{
-  color: #18314F;
-}
-header{
-    background-color: #468189;
-    text-align: center;
-    font-size: 2em;
-}
-header h1 {
-   margin: 0;
-}
-nav{
-  background-color: grey;
-  overflow: auto;
-}
-nav ul{
-  list-style: none;
-  font-size: 1.5em;
-  margin: 0;
-  padding: 0;
-}
+/* the spacing after every element on the website - - old moz ,  old webbkit (older websites) */;
+      *, *:before, *:after {
+         box-sizing: border-box;
+         /*   box sizing fixes so many things  */
 
-nav li{
-   float: left;
+      }
 
-  }
+      body{
+         background-color: #B9D6F2;
+         color: #18314F;
+         font-family: 'Roboto', sans-serif;
+         margin: 0;
+         padding: 0;
+      }
+      body a{
+        color: #18314F;
+      }
+      header{
+          background-color: #468189;
+          text-align: center;
+          font-size: 2em;
+      }
+      header h1 {
+         margin: 0;
+      }
+      nav{
+        background-color: grey;
+        overflow: hidden; 
+      }
 
-  nav a{
-     text-decoration: none;
-     padding: 1em;
-     color:#18314F;
-     font-family: Roboto cursive;
-     border-right:2px solid black;
-    }
+      nav:after{
+          content: "";
+          display: table;
+          clear: both;
+
+      }
+      nav ul{
+        list-style: none;
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li{
+         float: left;
+
+        }
+
+      nav a{
+         text-decoration: none;
+         padding: 1em;
+         color:#18314F;
+         font-family: Roboto, cursive;
+         border-right:2px solid black;
+        }
 
 /*  sudo selector is hover*/
     nav a:hover{
       background-color: #468189;
     }
 
-footer{
-   border-top: 2px solid black;
-   text-align: center;
-   font-weight: bold;
-}
 
-footer a{
-   color: #18314F;
-   text-decoration: none;
-}
-footer a:hover{
-   color: #297373;
-   text-decoration: underline;
-}
+    main {
+      background-color: #ffffff;
+      min-height: 100px;
+     }
+     main aside{
+          width: 15%;
+          display: inline-block;
+          padding: 1em;
+          vertical-align: top;
+     }
+     main aside h3, main aside 2 {
+        font-size: 2em;
+     }
+     main section{
+       width: 70%;
+       border-left: 1px solid black;
+       display: inline-block;
+       padding: 1em;
+     }
+     main section img {
+       width: 200px;
+       float: left;
+       margin: 0 0.5em 0.5em 0;
+     }
+     main section p {
+        font-size: 1.3em;
+        line-height: 1.5em;
+        margin-bottom: 2em;
+     }
 
-main{
+    footer{
+       border-top: 2px solid black;
+       text-align: center;
+       font-weight: bold;
+    }
 
-  min-height: 100px;
-}
+      footer a{
+         color: #18314F;
+         text-decoration: none;
+      }
+      footer a:hover{
+         color: #297373;
+         text-decoration: underline;
+      }
